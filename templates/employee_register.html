@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Registro de informacion del empleado</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h2 class="header">Registro del empleado:</h2>
+            </div>
+            <form method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="employee_name">Introduce el nombre del empleado:</label>
+                        <input id="employee_name" type="text" class="emp_name_field form-control"
+                            placeholder="Introduzca el nombre del empleado">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <span class="form-header">Introduce los dias en que el empleado trabajo:</span>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="monday" id="monday_choice"
+                                value="Monday">
+                            <label for="monday_choice" class="form-check-label">Lunes</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="tuesday" id="tuesday_choice"
+                                value="Tuesday">
+                            <label for="tuesday_choice" class="form-check-label">Martes</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="wednesday" id="wednesday_choice"
+                                value="Wesnesday">
+                            <label for="wednesday_choice" class="form-check-label">Miercoles</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="thursday" id="thursday_choice"
+                                value="Thursday">
+                            <label for="thursday_choice" class="form-check-label">Jueves</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="friday" id="friday_choice"
+                                value="Friday">
+                            <label for="friday_choice" class="form-check-label">Viernes</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="saturday" id="saturday_choice"
+                                value="Saturday">
+                            <label for="saturday_choice" class="form-check-label">Sabado</label>
+                        </div>
+                    </div>
+                    <div class="button_container">
+                        <button class="btn btn-primary">Confirmar Informacion</button>
+                        <button class="btn">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
