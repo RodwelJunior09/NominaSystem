@@ -1,1 +1,3 @@
-$("#project_table").Datatable();
+$(document).ready(function (){
+    $("project_table").Datatable();
+});
