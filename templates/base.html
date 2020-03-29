@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homePage.css')}}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Nomina System</a>
+        <div id="action-container" class="my-2 my-lg-0">
+            <a href="{{url_for('projectRegistration')}}" class="btn btn-outline">Add a New Project</a>
+        </div>
+        <div class="my-2 my-lg-0" id="login-container">
+            <button class="btn btn-outline-success">Sign In</button>
+            <button class="btn btn-outline-success">Sign Out</button>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="d-flex justify-content-center col-md-12">
+            <div class="card">
+                <div class="card-header">Estas seguro de borrar el projecto ?</div>
+                <div class="card-body">
+                    <form action="" method="POST">
+                        <button class="btn btn-primary" type="submit">Borrar el projecto</button>
+                        <a href="{{url_for('homePage')}}" class="btn btn-secondary">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
