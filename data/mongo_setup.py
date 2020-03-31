@@ -14,6 +14,7 @@ db_uri = "mongodb+srv://%s:%s@nominasystemrodwel-rj63p.mongodb.net/test?retryWri
 
 def global_init():
     mongoengine.connect(host=db_uri)
+    print(mongoengine.__version__)
     print("Mongo Connection Done")
 
 
